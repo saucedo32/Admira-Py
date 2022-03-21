@@ -1,6 +1,8 @@
 """
 EJERCICIO RONDA DE PERSONAS
 
+agregado de línea para github
+
 Tareas realizadas:
 - Contar en ronda de 1 en 1.
 - Controlar límite de personas en ronda.
