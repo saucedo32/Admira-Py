@@ -24,12 +24,17 @@ import random
 temp_ref = 1
 
 while (temp_ref != 0):
+
+    # Si la temperatura ingresada por consola es == 0 finaliza el programa.
     if(temp_ref == 0):
         break
 
     # Ingresar el valor de referencia por consola
     temp_ref = int(input("Introduzca una temperatura objetivo (en caso de introducir 0 finalizará el programa): "))
 
+
+    # Si se introduce un valor igual a cero se imprime que finaliza el programa (en realidad finaliza después de finalizar el ciclo pero tengo que imprimirlo aquí)
+    # Si se introduce un valor diferente de cero se imprime el valor y se realiza el procesamiento.
     if(temp_ref != 0):
         print("La temp. de referencia seleccionada es: ", temp_ref)
     else:
@@ -37,6 +42,7 @@ while (temp_ref != 0):
 
     # Genero 50 valores aleatorios:
     # Seteo una lista para completar valores random y suma_valores para poder calcular el promedio posteriormente
+    # Por cuestiones de tiempo lo calculo por mas que el valor introducido sea 0 (en esos casos lo calculo pero no imprimo el resultado)
     v_random = [ ]
     suma_valores = 0
     valores_a_generar = 50
@@ -47,6 +53,7 @@ while (temp_ref != 0):
     #print("las mediciones fueron: ", v_random)
 
     # Calculo el promedio (lo imprimo solamente si el valor ingresado de referencia es distinto de 0)
+    # Se calcula por más que el valor introducido sea 0 (en caso de que se introduzca un cero por consola se calcula pero no se imprime)
     prom_val_generados = suma_valores / valores_a_generar
     if(temp_ref != 0):
         print("El promedio de las mediciones es: ", prom_val_generados)
