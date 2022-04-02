@@ -1,7 +1,7 @@
 
 
 """
-CONTROL TEMPERATURA HORNO
+CONTROL TEMPERATURA HORNO:
 
 La tarea consiste en diseñar un algoritmo para controlar la temperatura de un horno de forma básica, leyendo valores desde un sensor y activando o desactivando 2 quemadores para aumentar o disminuir según se necesite.
 
